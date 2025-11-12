@@ -1,0 +1,29 @@
+# Archivos compilados
+*.o
+*.out
+megabus
+
+# Archivos de depuración
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Valgrind
+vgcore.*
+*.log
+
+# Temporales
+*.tmp
+*.bak

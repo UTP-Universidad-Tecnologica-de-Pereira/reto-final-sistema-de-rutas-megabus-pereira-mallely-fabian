@@ -102,7 +102,7 @@ int main() {
     printf("║       🚍 SISTEMA DE RUTAS MEGABÚS PEREIRA 2025 🚍          ║\n");
     printf("║                                                            ║\n");
     printf("║              Universidad Tecnológica de Pereira            ║\n");
-    printf("║                Estructuras de Datos                        ║\n");
+    printf("║                    Estructuras de Datos                    ║\n");
     printf("║                                                            ║\n");
     printf("╚════════════════════════════════════════════════════════════╝\n\n");
     
@@ -226,7 +226,7 @@ int main() {
                 printf("\n");
                 printf("╔════════════════════════════════════════════════════════════╗\n");
                 printf("║                                                            ║\n");
-                printf("║          ¡Gracias por usar el Sistema Megabús!            ║\n");
+                printf("║          ¡Gracias por usar el Sistema Megabús!             ║\n");
                 printf("║                                                            ║\n");
                 printf("╚════════════════════════════════════════════════════════════╝\n\n");
                 free_graph(megabus);

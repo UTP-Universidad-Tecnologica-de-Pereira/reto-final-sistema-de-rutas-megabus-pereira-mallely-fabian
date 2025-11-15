@@ -2,7 +2,7 @@ Sistema Megabús Pereira 2025
 
 Autores
 
-\-Nombres: \[FABIAN DAVID BOLIVAR VELEZ - MAYELI]
+\-Nombres: \[FABIAN DAVID BOLIVAR VELEZ - MALLELI]
 
 \-Código: \[1.087.551.045]
 

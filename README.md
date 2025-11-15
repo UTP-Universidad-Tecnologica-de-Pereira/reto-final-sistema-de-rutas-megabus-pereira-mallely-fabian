@@ -1,42 +1,30 @@
-\# Sistema Megabús Pereira 2025
+Sistema Megabús Pereira 2025
 
+Autores
 
+\-Nombres: \[FABIAN DAVID BOLIVAR VELEZ - MAYELI]
 
-\## Autor
+\-Código: \[1.087.551.045]
 
-\- \*\*Nombre:\*\* \[FABIAN DAVID BOLIVAR VELEZ - MAYELI]
+\-Universidad Tecnológica de Pereira
 
-\- \*\*Código:\*\* \[1.087.551.045]
+\-Asignatura: Estructuras de Datos
 
-\- \*\*Universidad Tecnológica de Pereira\*\*
-
-\- \*\*Asignatura:\*\* Estructuras de Datos
-
-
-
-\## Descripción
-
-
+Descripción
 
 Sistema completo de rutas del Megabús de Pereira implementado en C. El programa modela la red de transporte público con 15 estaciones reales, permitiendo encontrar rutas óptimas por tiempo, costo, o número de transbordos. Incluye funcionalidades adicionales de análisis de red y sistema de horarios.
 
+Compilación
 
+Requisitos
 
-\## Compilación
+\-GCC 7.0 o superior
 
+\-Sistema operativo: Linux, macOS, o Windows con WSL
 
+\-Make (opcional pero recomendado)
 
-\### Requisitos
-
-\- GCC 7.0 o superior
-
-\- Sistema operativo: Linux, macOS, o Windows con WSL
-
-\- Make (opcional pero recomendado)
-
-
-
-\### Compilar con Makefile
+Compilar con Makefile
 
 ```bash
 
@@ -44,9 +32,7 @@ make
 
 ```
 
-
-
-\### Compilar manualmente
+Compilar manualmente
 
 ```bash
 
@@ -54,9 +40,7 @@ gcc -Wall -Wextra -std=c11 -g main.c graph.c algorithms.c statistics.c -o megabu
 
 ```
 
-
-
-\### Limpiar archivos compilados
+Limpiar archivos compilados
 
 ```bash
 
@@ -64,9 +48,7 @@ make clean
 
 ```
 
-
-
-\## Ejecución
+Ejecución
 
 ```bash
 
@@ -74,17 +56,11 @@ make clean
 
 ```
 
+Funcionalidades Implementadas
 
+✅ Parte 1: Extensiones Básicas (60 puntos)
 
-\## Funcionalidades Implementadas
-
-
-
-\### ✅ Parte 1: Extensiones Básicas (60 puntos)
-
-
-
-1\. \*\*Dijkstra por Costo\*\* (20 puntos)
+1\. Dijkstra por Costo (20 puntos)
 
 &nbsp;  - Encuentra la ruta más económica entre dos estaciones
 
@@ -92,9 +68,7 @@ make clean
 
 &nbsp;  - Muestra detalles de costos y transbordos gratuitos
 
-
-
-2\. \*\*BFS con Menos Transbordos\*\* (20 puntos)
+2\. BFS con Menos Transbordos (20 puntos)
 
 &nbsp;  - Minimiza el número de cambios de línea
 
@@ -102,9 +76,7 @@ make clean
 
 &nbsp;  - Muestra el itinerario completo con líneas utilizadas
 
-
-
-3\. \*\*Dataset de Pereira\*\* (20 puntos)
+3\. Dataset de Pereira (20 puntos)
 
 &nbsp;  - 15 estaciones reales del sistema Megabús
 
@@ -114,21 +86,15 @@ make clean
 
 &nbsp;  - Red completamente conectada
 
+✅ Parte 2: Funcionalidades Adicionales (40 puntos)
 
-
-\### ✅ Parte 2: Funcionalidades Adicionales (40 puntos)
-
-
-
-4\. \*\*Sistema de Horarios\*\* (20 puntos)
+4\. Sistema de Horarios (20 puntos)
 
 &nbsp;  - Verifica disponibilidad de rutas según hora del día
 
 &nbsp;  - Calcula tiempos de espera promedio
 
 &nbsp;  - Horarios diferenciados por tipo de línea
-
-
 
 5\. \*\*Estadísticas de Red\*\* (20 puntos)
 
@@ -140,13 +106,9 @@ make clean
 
 &nbsp;  - Cálculo de distancias y tiempos promedios
 
+Estructuras de Datos
 
-
-\## Estructuras de Datos
-
-
-
-\### Grafo Principal
+Grafo Principal
 
 ```c
 
@@ -164,9 +126,7 @@ typedef struct Graph {
 
 ```
 
-
-
-\### Nodo de Adyacencia
+Nodo de Adyacencia
 
 ```c
 
@@ -188,11 +148,7 @@ typedef struct AdjNode {
 
 ```
 
-
-
-\## Complejidad
-
-
+Complejidad
 
 | Función | Complejidad Temporal | Complejidad Espacial |
 
@@ -210,15 +166,9 @@ typedef struct AdjNode {
 
 | `find\_hub\_stations` | O(V²) | O(V) |
 
+Donde: V = 15 vértices, E = 44 aristas
 
-
-\*\*Donde:\*\* V = 15 vértices, E = 44 aristas
-
-
-
-\## Estaciones del Sistema
-
-
+Estaciones del Sistema
 
 0\. Terminal de Transporte
 
@@ -250,13 +200,9 @@ typedef struct AdjNode {
 
 14\. El Poblado
 
+Ejemplos de Uso
 
-
-\## Ejemplos de Uso
-
-
-
-\### Ejemplo 1: Ruta más económica
+Ejemplo 1: Ruta más económica
 
 ```
 
@@ -265,8 +211,6 @@ Opción: 3
 Origen: 0 (Terminal)
 
 Destino: 4 (Hospital San Jorge)
-
-
 
 Resultado:
 
@@ -278,9 +222,7 @@ Resultado:
 
 ```
 
-
-
-\### Ejemplo 2: Menos transbordos
+Ejemplo 2: Menos transbordos
 
 ```
 
@@ -290,8 +232,6 @@ Origen: 6 (Aeropuerto)
 
 Destino: 5 (Dosquebradas)
 
-
-
 Resultado:
 
 🔄 Transbordos: 1
@@ -300,9 +240,7 @@ Resultado:
 
 ```
 
-
-
-\## Verificación de Memory Leaks
+Verificación de Memory Leaks
 
 ```bash
 
@@ -310,9 +248,7 @@ make valgrind
 
 ```
 
-
-
-\*\*Resultado esperado:\*\*
+Resultado esperado:
 
 ```
 
@@ -320,11 +256,7 @@ All heap blocks were freed -- no leaks are possible
 
 ```
 
-
-
-\## Limitaciones Conocidas
-
-
+Limitaciones Conocidas
 
 1\. Sistema limitado a 100 estaciones (MAX\_VERTICES)
 
@@ -334,15 +266,11 @@ All heap blocks were freed -- no leaks are possible
 
 4\. Requiere índices numéricos (0-14) en lugar de nombres
 
+Referencias
 
+\-Cormen, T. H., et al. (2009). Introduction to Algorithms
 
-\## Referencias
-
-
-
-\- Cormen, T. H., et al. (2009). Introduction to Algorithms
-
-\- Weiss, M. A. (1996). Data Structures and Algorithm Analysis in C
+\-Weiss, M. A. (1996). Data Structures and Algorithm Analysis in C
 
 
 
@@ -350,5 +278,5 @@ All heap blocks were freed -- no leaks are possible
 
 
 
-\*\*Desarrollado para el curso de Estructuras de Datos - UTP 2025\*\*
+Desarrollado para el curso de Estructuras de Datos - UTP 2025
 
